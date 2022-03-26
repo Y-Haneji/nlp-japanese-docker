@@ -2,7 +2,7 @@
 
 https://hub.docker.com/repository/docker/yhaneji/nlp-japanese のdockerイメージのレポジトリ。
 
-[「作りながら学ぶ！PyTorchによる発展ディープラーニング」](https://github.com/YutaroOgawa/pytorch_advanced)の第7章、8章を実行するための環境を構築できる。
+[「作りながら学ぶ！PyTorchによる発展ディープラーニング」](https://github.com/YutaroOgawa/pytorch_advanced)の第7章、8章の自然言語処理を実行するための環境を構築できます。
 
 ## Dockerイメージのダウンロードとコンテナの立ち上げ
 
@@ -12,7 +12,7 @@ cd (プロジェクトのディレクトリ)
 docker container run --rm -it -v $(PWD):/tmp/working yhaneji/nlp-japanese:1.0.0
 ```
 
-たったこれだけで、書籍のコードを実行する環境が整い、JupyterLabが立ち上がります。JupyterLabは自動ではブラウザが立ち上がらない（はず）ので、ターミナルに表示されたリンクを開きます。イメージのダウンロードは2回目以降は必要ありません。
+たったこれだけで、書籍のコードを実行する環境が整い、JupyterLabが立ち上がります。本Dockerイメージでは、自動でJupyterLabのブラウザは立ち上がらない（はず）ので、ターミナルに表示されたリンクを開きます。イメージのダウンロードは2回目以降は必要ありません。
 
 ## Dockerfileからイメージをビルドするには
 
