@@ -9,7 +9,7 @@ https://hub.docker.com/repository/docker/yhaneji/nlp-japanese のdockerイメー
 ```sh:ターミナル
 docker image pull yhaneji/nlp-japanese:1.0.0
 cd (プロジェクトのディレクトリ)
-docker container run --rm -it -v $(PWD):/tmp/working yhaneji/nlp-japanese:1.0.0
+docker container run --rm -it -p 8888:8888 -v $(PWD):/tmp/working yhaneji/nlp-japanese:1.0.0
 ```
 
 たったこれだけで、書籍のコードを実行する環境が整い、JupyterLabが立ち上がります。本Dockerイメージでは、自動でJupyterLabのブラウザは立ち上がらない（はず）ので、ターミナルに表示されたリンクを開きます。イメージのダウンロードは2回目以降は必要ありません。
